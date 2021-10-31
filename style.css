@@ -1,0 +1,357 @@
+html,body{
+    margin: 0%;
+    padding:0%;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-paramount{
+    height: 4rem;
+    background-color: slateblue;
+}
+.brand{
+    font-weight: 400;
+}
+.user-login{
+    width: 28rem;
+    height: 35rem;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 1rem;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-gradient{
+    background:linear-gradient(45deg,rgb(132, 0, 240),rgb(71, 0, 237));
+    height: 100%;
+    width: 100%;
+}
+.login-icon{
+    font-size: 8rem;
+}
+.input-icon{
+    position: absolute;
+    left: 6%;
+}
+.eye-icon{
+    position: absolute;
+    right: 8%;
+    cursor: pointer;
+}
+.paramount-control{
+    border: none;
+    outline: none !important;
+    background-color: #dfdfdf;
+    padding: 1.5rem 1rem 1.5rem 2.8rem;
+    width: 25rem;
+    border-radius: 0%;
+}
+.btn-purple{
+    background:linear-gradient(270deg,#8400f0,#8e00ed);
+    color: #fff;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.fa-1x{
+    font-size: 1.4rem;
+}
+.forgot-password{
+    padding: 0.5rem;
+    font-weight: 600;
+    color: #8400f0;
+}
+.upload-photo{
+    width: 28rem;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.image-area {
+    border: 2px dashed rgba(99, 99, 99, 0.7);
+    padding: 1rem;
+    position: relative;
+    object-fit: cover;
+}
+
+.image-area::before {
+    content: 'Uploaded image result';
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+@media (max-width:768px) {
+    .user-login{
+        width: 98%;
+        height: 35rem;
+        background-color: #ffffff;
+        margin: auto;
+        margin-top: 25%;
+        border-radius: 1rem;
+        border: 1px solid #d6d6d6;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    }
+    .paramount-control{
+        border: none;
+        outline: none !important;
+        background-color: #ededed;
+        padding: 1.5rem 1rem 1.5rem 2.8rem;
+        width: 20rem;
+    }
+    .input-icon{
+        position: absolute;
+        left: 7%;
+    }
+    .upload-photo{
+        width: 95%;
+        background-color: #ffffff;
+        margin: auto;
+        margin-top: 25%;
+        border-radius: 5px;
+        border: 1px solid #d6d6d6;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Form */
+
+#heading {
+    text-transform: none;
+    color: #673AB7;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #673AB7;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #673AB7;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #311B92
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    margin-left: -2.7rem !important;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #673AB7
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f0f7"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f07a"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f283"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #673AB7
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #673AB7
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}

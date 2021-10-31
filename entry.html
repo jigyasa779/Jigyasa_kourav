@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Services for 65+</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top shadow navbar-paramount navbar-expand-lg">
+      <a href="home.html" class="navbar-brand text-white brand"
+        >Paramount <b>Plasters</b></a
+      >
+    </nav>
+
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+        <div
+          class="
+            col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5
+            text-center
+            p-0
+            mt-3
+            mb-2
+          "
+        >
+          <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+            <h2 id="heading"><strong>Let's get to work</strong></h2>
+            <p>FilL all the details to go to next step</p>
+            <form id="msform">
+              <!-- progressbar -->
+              <ul id="progressbar">
+                <li class="active" id="account"><strong>DETAILS</strong></li>
+                <li id="personal"><strong>PET DETAILS</strong></li>
+                <li id="payment"><strong>Payment</strong></li>
+                <li id="confirm"><strong>Finish</strong></li>
+              </ul>
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <br />
+              <!-- fieldsets -->
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Pet owner's Details:</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 1 - 4</h2>
+                    </div>
+                  </div>
+                  <label class="fieldlabels">Pet owner's Name *</label>
+                  <input type="name" name="fname" placeholder="Enter  name..." />
+                  <label class="fieldlabels">Owner's location: *</label>
+                  <input type="text" name="oname" placeholder="Enter owner location..." />
+                  <label class="fieldlabels">Contact No: *</label>
+                  <input
+                    type="number"
+                    name="contact"
+                    placeholder="Enter phone number..."
+                  />
+                  <label class="fieldlabels">Pet owner Address: *</label>
+                  <textarea name="address" id="address" placeholder="Enter address..." rows="5"></textarea>
+                  
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Next"
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Pet Details:</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 2 - 4</h2>
+                    </div>
+                  </div>
+                  <label class="fieldlabels">Pet Name: *</label>
+                  <input type="text" name="name" placeholder="Pet Name" />
+                  <label class="fieldlabels">Pet age *</label>
+                  <input type="number" name="lna" placeholder="Age (in number)" />
+                  <label class="fieldlabels">Pet type *</label>
+                  <input type="text" name="phno" placeholder="Pet Category" />
+                  <label class="fieldlabels"> Amount: *</label>
+                  <input
+                    type="number"
+                    name="Charge"
+                    placeholder="Total Amount"
+                  />
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Next"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Payment Details:</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 3 - 4</h2>
+                    </div>
+                  </div>
+                  <label class="fieldlabels">Total Amount: *</label>
+                  <input type="text" name="fname" placeholder="Total Amount" />
+                  <label class="fieldlabels">Amount Collected: *</label>
+                  <input type="number" name="lname" placeholder="Amount (in Cash or Check)" />
+                  <label class="fieldlabels">Mode of Payment: *</label>
+                  <select class="form-control" name="ttype" id="ttype">
+                      <option value="Cash">Cash</option>
+                      <option value="Cheque">Cheque</option>
+                  </select>
+                  <br>
+                  <label class="fieldlabels">Credit Amount: *</label>
+                  <input
+                    type="number"
+                    name="cAmt"
+                    placeholder="Credit Amount"
+                  />
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Submit"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title"> FINISH :</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 4 - 4</h2>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <h2 class="purple-text text-center">
+                    <strong>SUCCESS !</strong>
+                  </h2>
+                  <br />
+                  <div class="row justify-content-center">
+                    <div class="col-3">
+                      <img
+                        src="./img/1.png"
+                        class="fit-image"
+                      />
+                    </div>
+                  </div>
+                  <br /><br />
+                  <div class="row justify-content-center">
+                    <div class="col-7 text-center">
+                      <h5 class="purple-text text-center">
+                        You Have Successfully Completed Task
+                      </h5>
+                      <br>
+                      <br>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-purple" onclick="window.location.reload();">Next Entry</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
+        var current = 1;
+        var steps = $("fieldset").length;
+
+        setProgressBar(current);
+
+        $(".next").click(function () {
+          current_fs = $(this).parent();
+          next_fs = $(this).parent().next();
+
+          //Add Class Active
+          $("#progressbar li")
+            .eq($("fieldset").index(next_fs))
+            .addClass("active");
+
+          //show the next fieldset
+          next_fs.show();
+          //hide the current fieldset with style
+          current_fs.animate(
+            { opacity: 0 },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                next_fs.css({ opacity: opacity });
+              },
+              duration: 500,
+            }
+          );
+          setProgressBar(++current);
+        });
+
+        $(".previous").click(function () {
+          current_fs = $(this).parent();
+          previous_fs = $(this).parent().prev();
+
+          //Remove class active
+          $("#progressbar li")
+            .eq($("fieldset").index(current_fs))
+            .removeClass("active");
+
+          //show the previous fieldset
+          previous_fs.show();
+
+          //hide the current fieldset with style
+          current_fs.animate(
+            { opacity: 0 },
+            {
+              step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
+
+                current_fs.css({
+                  display: "none",
+                  position: "relative",
+                });
+                previous_fs.css({ opacity: opacity });
+              },
+              duration: 500,
+            }
+          );
+          setProgressBar(--current);
+        });
+
+        function setProgressBar(curStep) {
+          var percent = parseFloat(100 / steps) * curStep;
+          percent = percent.toFixed();
+          $(".progress-bar").css("width", percent + "%");
+        }
+
+        $(".submit").click(function () {
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
